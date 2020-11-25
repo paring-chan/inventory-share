@@ -3,7 +3,7 @@ version: '3.7'
 services:
   paper:
     build: .
-    container_name: plugin_test
+    container_name: inventory_share
     stdin_open: true
     tty: true
     ports:
