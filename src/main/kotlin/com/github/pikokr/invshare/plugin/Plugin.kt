@@ -60,7 +60,7 @@ class Plugin : JavaPlugin(), Listener {
     }
 
     private fun load() {
-        val file = File(dataFolder, "inventory.yml").also { if (!it.exists()) return }
+        val file = File(dataFolder, "inv.yml").also { if (!it.exists()) return }
 
         val yml = YamlConfiguration.loadConfiguration(file)
         yml.loadItemStackList("items", items)
@@ -71,7 +71,7 @@ class Plugin : JavaPlugin(), Listener {
 
     @Suppress("UNCHECKED_CAST")
     private fun ConfigurationSection.loadItemStackList(name: String, list: NonNullList<ItemStack>) {
-        val map = getMapList(name)
+        val map = this.getMapList(name)
         val items = map.map { CraftItemStack.asNMSCopy(CraftItemStack.deserialize(it as Map<String, Any>)) }
 
         for (i in 0 until min(list.count(), items.count())) {
