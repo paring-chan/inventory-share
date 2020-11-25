@@ -16,7 +16,7 @@ repositories {
 dependencies {
     compileOnly(kotlin("stdlib"))
     compileOnly("com.destroystokyo.paper:paper-api:1.16.4-R0.1-SNAPSHOT")
-    compileOnly(files("./.docker/paper_server-1.16.4-latest.jar"))
+    compileOnly(files("./.buildtools/spigot-1.16.4.jar"))
     implementation("com.github.noonmaru:kommand:0.6.3")
 }
 
