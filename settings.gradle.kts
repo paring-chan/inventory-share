@@ -1,2 +1,2 @@
-rootProject.name = "kotlin-plugin-sample"
+rootProject.name = "inventory-share"
 
