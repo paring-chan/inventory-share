@@ -13,5 +13,5 @@ services:
       - ./.docker:/data
     entrypoint:
       - /docker-setup-plugin
-      - https://github.com/noonmaru/kotlin-plugin/releases/download/1.4.10/Kotlin.jar
+      - https://github.com/noonmaru/kotlin-plugin/releases/download/1.4.21/Kotlin.jar
       - https://github.com/noonmaru/auto-reloader/releases/download/1.0.1/AutoReloader.jar
